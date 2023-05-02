@@ -8,7 +8,11 @@ export default function Netflix() {
     return () => (window.onscroll = null);
   
 };
-    return <div>
+    return(
+    <div>
+      
+        <button>gffaf</button>
         <Navbar isScrolled= {isScrolled}/>
     </div>
+    );
 }
