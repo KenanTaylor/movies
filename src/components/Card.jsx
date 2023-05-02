@@ -101,6 +101,7 @@ const Container = styled.div`
                 position: absolute;
             }
             video{
+                display: none;
                 width: 100%;
                 height: 140px;
                 object-fit: cover;
