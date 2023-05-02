@@ -8,6 +8,7 @@ import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchMovies, getGenres } from '../store';
+import Slider from '../components/Slider';
 export default function Movie() {
     const [isScrolled, setIsScrolled] = useState(false);
     const navigate = useNavigate();
@@ -28,7 +29,7 @@ export default function Movie() {
     return () => (window.onscroll = null);
  
 };
-console.log(movies);
+
     return(
     <Container>
         <Navbar isScrolled= {isScrolled}/>
@@ -50,6 +51,7 @@ console.log(movies);
         </div>
     </div>
     </div>
+    <Slider movies={movies} />
     </Container>
     );
 }
