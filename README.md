@@ -2,6 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+This project is a version of a streaming platform that allows you have your own login and viewing experience. Packed with thousands of movies for your choosing. The movies are implemented through an API which help catergoize them and list them for a more pleasureable experience. 
+
+
+
+
+
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
