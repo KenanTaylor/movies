@@ -34,7 +34,20 @@ function Card({movieData, isLiked = false}) {
                     </h3>
                     <div className="icons flex j between">
                         <div className="controls flex"></div>
-                        <IoPlay></IoPlay>
+                        <IoPlayCircleSharp title="play"
+                        onClick={() => navigate("/player")} 
+                        />
+                        <RiThumbUpFill title="Like" />
+                        <RiThumbDownFill title="Dislike" />
+                        { isLiked ? (
+                                <BsCheck title="Remove From List" /> 
+                        ) :(
+                                <AiOutlinePlus title="Add to my list" />
+                            
+                        )}
+                    </div>
+                    <div className="info">
+                        <BiChevronDown title= "More Info" />
                     </div>
                 </div>
             </div>
